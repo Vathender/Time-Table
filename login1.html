@@ -7,7 +7,7 @@
   <title>Login Page</title>
   <style>
     body {
-      background-image: url('your-background-image-url.jpg');
+      background-image: url(wallpaperflare.com_wallpaper.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -91,7 +91,7 @@
     
       const user = userCredential.user;
       console.log(user);
-      alert(user.email+" Login successfully!!!");
+      window.location.assign("one.html");
       document.getElementById('logout').style.display = 'block';
     
     })

@@ -33,7 +33,7 @@
 
   <div class="row">
     <div class="col-md-6 offset-md-3 login-container">
-      <h2 class="text-center">Student-Signup</h2>
+      <h2 class="text-center">Teacher-Signup</h2>
       
         <div class="form-group">
           <label for="Email" >Email</label>
@@ -47,9 +47,9 @@
       
       
       <h2 class="text-center">Already a member?</h2>
-  <a href="login.html"><button class="btn btn-outline-dark btn-block ">Login</button></a>
+  <a href="login1.html"><button class="btn btn-outline-dark btn-block ">Login</button></a>
   <br>
-  <a href="signup1.html"><button class="btn btn-danger btn-block ">Teacher's Login</button></a>
+  <a href="signup.html"><button class="btn btn-success btn-block ">Student-Login</button></a>
     </div>
   </div>
   
@@ -65,14 +65,14 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-  apiKey: "AIzaSyD-VG57RpmRHVOfSGYrzVPrt5Cbr7h52Bk",
-  authDomain: "newdata-657f5.firebaseapp.com",
-  projectId: "newdata-657f5",
-  storageBucket: "newdata-657f5.appspot.com",
-  messagingSenderId: "693463717492",
-  appId: "1:693463717492:web:9a027893002d545cc0e321",
-  measurementId: "G-9T2TTNNNEG"
-};
+    apiKey: "AIzaSyBr-UBWq8WYG-xILg6IXZ9Cwziosd9s9lI",
+    authDomain: "teacherslogin-108e0.firebaseapp.com",
+    projectId: "teacherslogin-108e0",
+    storageBucket: "teacherslogin-108e0.appspot.com",
+    messagingSenderId: "10549312619",
+    appId: "1:10549312619:web:4d9ea64435b4f52fc8052e",
+    measurementId: "G-6YQPJ6HQR7"
+  };
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
@@ -132,7 +132,7 @@
     signOut(auth).then(() => {
     
       console.log('Sign-out successful.');
-
+      alert('Sign-out successful.');
       document.getElementById('logout').style.display = 'none';
     }).catch((error) => {
   
