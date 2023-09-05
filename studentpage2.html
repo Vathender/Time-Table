@@ -47,6 +47,20 @@
 
 <!-- Your custom JavaScript for handling logout goes here -->
 <script>
+     const firebaseConfig = {
+  apiKey: "AIzaSyD-VG57RpmRHVOfSGYrzVPrt5Cbr7h52Bk",
+  authDomain: "newdata-657f5.firebaseapp.com",
+  projectId: "newdata-657f5",
+  storageBucket: "newdata-657f5.appspot.com",
+  messagingSenderId: "693463717492",
+  appId: "1:693463717492:web:9a027893002d545cc0e321",
+  measurementId: "G-9T2TTNNNEG"
+};
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+  console.log(app);
  
     document.getElementById("logoutBtn").addEventListener("click", function() {
     signOut(auth).then(() => {
