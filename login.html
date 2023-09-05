@@ -45,7 +45,6 @@
           <input type="password" class="form-control" id="login_password" name="login_password" placeholder="Enter your password">
         </div>
         <button class="btn btn-outline-dark" id="login" name="login">Login</button>
-        <a href="#" id="logout" style="display: none;">Log Out</a>
       
       <h2 class="text-center">Dont have an Account?</h2>
   <a href="signup"><button class="btn btn-outline-dark btn-block ">Signup</button></a>
@@ -105,16 +104,6 @@
 
 
     
-  document.getElementById("logout").addEventListener("click", function() {
-    signOut(auth).then(() => {
-    
-      console.log('Sign-out successful.');
-      alert('Sign-out successful.');
-      document.getElementById('logout').style.display = 'none';
-    }).catch((error) => {
-  
-      console.log('An error happened.');
-    });		  		  
-  });
+ 
 </script>
 </html>
